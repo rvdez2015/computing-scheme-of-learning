@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lesson observation · Computing</title>
+<link rel="stylesheet" href="department-brand.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;color:#241b35;background:#f8f6fc;font:16px/1.55 system-ui,sans-serif}
+header{padding:28px max(5vw,calc((100vw - 980px)/2));background:#101d3d;color:#fff}
+h1{font:700 clamp(2rem,5vw,3rem)/1.1 Georgia,serif;margin:14px 0}
+h2{color:#43266b;margin:26px 0 12px}
+main{max-width:1030px;margin:auto;padding:24px 25px 55px}
+label{display:block;font-weight:600;margin-top:12px}
+input,select,textarea,button{font:inherit}
+input:not([type=checkbox]),select,textarea{display:block;width:100%;padding:8px;border:1px solid #837895;border-radius:5px;background:white;color:inherit}
+textarea{min-height:100px;resize:vertical}
+fieldset{padding:12px 16px;border:1px solid #b8aac9;border-radius:7px;margin:16px 0}
+legend{font-weight:bold}
+.checks label{font-weight:400;margin:5px 0}
+.checks input{margin-right:7px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:0 20px}
+a{color:#522d81;text-underline-offset:.2em}
+button{padding:9px 14px;background:#101d3d;color:#fff;border:0;border-radius:5px;cursor:pointer}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.note{padding:10px 14px;background:#eee7f7;border-left:4px solid #6c4b98}
+#report{display:none}
+@media print{
+ @page{margin:17mm}
+ body{background:#fff;color:#111;font:11pt/1.4 system-ui,sans-serif}
+ header,main{display:none}
+ #report{display:block}
+ #report h1{font-size:22pt}
+ #report h2{font-size:13pt;color:#111;break-after:avoid}
+ #report p{white-space:pre-wrap;overflow-wrap:anywhere}
+}
+</style>
+</head>
+<body>
+<header>
+<a class="department-brand" href="index.html"><img src="department-lockup.png" alt="Farlington School Computer Science Department · Computing curriculum" width="900" height="293"></a>
+<h1>Lesson observation</h1>
+<p id="context"></p>
+</header>
+<main>
+<nav><a id="back" href="index.html">Back to curriculum</a></nav>
+<p class="note">This page does not save or submit responses. Print or save a PDF before closing it. Use your school email to share the report, and keep evidence free of pupil names or identifying details.</p>
+<form id="observation" autocomplete="off">
+<h2>Observation details</h2>
+<div class="grid">
+<label>Teacher<input id="teacher"></label>
+<label>Observer<input id="observer"></label>
+<label>Observer’s school email<input id="email" type="email"></label>
+<label>Date<input id="date" type="date"></label>
+<label>Class or group<input id="classGroup"></label>
+<label>Observation type<select id="type"><option>Peer observation</option><option>Informal observation</option><option>Formal observation</option><option>Self-reflection</option></select></label>
+</div>
+<label>Agreed focus<input id="focus" placeholder="For example, how the teacher checks understanding before independent practice"></label>
+<p id="planned" class="note"></p>
+<fieldset class="checks">
+<legend>Observed indicators</legend>
+<p>Tick an item only if you saw or heard it. Add the specific example and any relevant context in Factual evidence.</p>
+<label><input type="checkbox" value="Expectations were made clear and pupils responded to a suitable challenge">Clear expectations and challenge</label>
+<label><input type="checkbox" value="Pupils’ responses or work showed a change in understanding during the lesson">Progress visible in pupils’ responses or work</label>
+<label><input type="checkbox" value="The teacher explained a concept accurately or addressed a specific misconception">Accurate explanation or response to a misconception</label>
+<label><input type="checkbox" value="Pupils moved from modelling or guided practice to independent application">Modelled or guided practice followed by independent application</label>
+<label><input type="checkbox" value="A scaffold or adjustment helped pupils participate and work towards the objective">An adaptation helped pupils access the task</label>
+<label><input type="checkbox" value="The teacher checked understanding and used the answers to adjust teaching or feedback">Assessment informed teaching or feedback</label>
+<label><input type="checkbox" value="Classroom routines supported an orderly and safe learning environment">Routines supported safe, orderly learning</label>
+<label><input type="checkbox" value="A specific wider professional responsibility was observed or discussed with evidence">A wider professional responsibility had specific evidence</label>
+</fieldset>
+<label>Factual evidence<textarea id="facts" placeholder="What did the teacher or pupils actually say, do or produce?"></textarea></label>
+<fieldset id="standards" class="checks">
+<legend>Teachers’ Standards supported by the evidence</legend>
+<p>Select only those you can connect to specific evidence. Planned standards are shown above for reference.</p>
+</fieldset>
+<label>Strengths and impact on learning<textarea id="strengths"></textarea></label>
+<label>Development priorities<textarea id="priorities"></textarea></label>
+<label>Teacher reflection<textarea id="reflection"></textarea></label>
+<label>Agreed actions<textarea id="actions"></textarea></label>
+<label>Review date<input id="review" type="date"></label>
+<div class="actions">
+<button type="button" id="print">Print / Save as PDF</button>
+<button type="button" id="emailDraft">Open email to observer</button>
+</div>
+<p id="status" role="status">For longer reports, save a PDF and attach it to the email draft yourself.</p>
+</form>
+</main>
+<article id="report"></article>
+<script>
+'use strict';
+const params = new URLSearchParams(location.search);
+const lesson = params.get('title') || 'Computing lesson';
+const context = params.get('context') || '';
+const source = params.get('lesson') || '';
+const format = /^year-(?:[5-9]|1[0-3])-(?:autumn|spring|summer)-[12]-lesson-\d{2}\.html$/;
+const planned = (params.get('standards') || '').split(',').filter(v=>/^TS[1-8]$/.test(v));
+const list = [
+ 'High expectations and challenge','Pupil progress and outcomes','Subject and curriculum knowledge',
+ 'Well-structured lessons','Adaptive teaching','Assessment','Behaviour and a safe learning environment',
+ 'Wider professional responsibilities'
+];
+const $ = id => document.getElementById(id);
+$('context').textContent = [lesson, context].filter(Boolean).join(' · ');
+$('planned').textContent = planned.length ? 'Standards targeted in the lesson plan: ' + planned.join(', ') + '.' : 'Refer to the lesson plan for its targeted Teachers’ Standards.';
+if (format.test(source)) {
+ $('back').setAttribute('href',source);
+ $('back').textContent = 'Back to lesson plan';
+}
+list.forEach((name,i)=>{
+ const label=document.createElement('label'), input=document.createElement('input');
+ input.type='checkbox';
+ input.value='TS'+(i+1)+' · '+name;
+ label.append(input, input.value);
+ $('standards').append(label);
+});
+const value = id => $(id).value.trim();
+const selected = selector => Array.from(document.querySelectorAll(selector), input => input.value).join('\n');
+function sections(){
+ return [
+  ['Lesson', [lesson,context].filter(Boolean).join(' · ')],
+  ['Teacher',value('teacher')],['Observer',value('observer')],['Date',value('date')],
+  ['Class or group',value('classGroup')],['Observation type',value('type')],
+  ['Agreed focus',value('focus')],['Planned Teachers’ Standards',planned.join(', ')],
+  ['Observed indicators',selected('input[type=checkbox]:checked:not(#standards input)')],
+  ['Factual evidence',value('facts')],['Standards supported by evidence',selected('#standards input:checked')],
+  ['Strengths and impact on learning',value('strengths')],['Development priorities',value('priorities')],
+  ['Teacher reflection',value('reflection')],['Agreed actions',value('actions')],['Review date',value('review')]
+ ].filter(([,text])=>text);
+}
+function printReport(){
+ const heading=document.createElement('h1');
+ heading.textContent='Computing lesson observation';
+ const report=$('report');
+ report.replaceChildren(heading);
+ sections().forEach(([label,text])=>{
+  const h=document.createElement('h2'), p=document.createElement('p');
+  h.textContent=label;
+  p.textContent=text;
+  report.append(h,p);
+ });
+}
+window.addEventListener('beforeprint',printReport);
+$('print').addEventListener('click',()=>{printReport();window.print();});
+$('emailDraft').addEventListener('click',()=>{
+ const email=$('email');
+ if(!email.value.trim()){email.focus();$('status').textContent='Enter the observer’s school email address first.';return;}
+ if(!email.reportValidity())return;
+ const recipient=email.value.trim();
+ const subject='Computing lesson observation · '+lesson;
+ const detail=sections().map(([label,text])=>label+'\n'+text).join('\r\n\r\n');
+ const uri=body=>'mailto:'+encodeURIComponent(recipient)+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+ const full=uri(detail);
+ if(full.length>1800){
+  $('status').textContent='The report is too long for an email link. Save it as a PDF and attach it to the draft.';
+  location.href=uri('Please find the observation report attached. Add the saved PDF before sending.');
+ }else{
+  $('status').textContent='Your email app will open a draft for you to review and send.';
+  location.href=full;
+ }
+});
+$('observation').addEventListener('submit',event=>event.preventDefault());
+</script>
+</body>
+</html>
