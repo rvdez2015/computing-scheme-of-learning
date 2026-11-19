@@ -8,37 +8,43 @@
         "id": "PX-J277-T01-Q01",
         "prompt": "Which register holds the address of the next instruction?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T01-Q02",
         "prompt": "Give one example of an embedded system in a washing machine.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T01-Q03",
         "prompt": "During a memory read, distinguish the contents of the MAR and MDR.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T01-Q04",
         "prompt": "A CPU clock runs at 2.4 GHz. State what this means and explain why it does not guarantee 2.4 billion completed instructions each second.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T01-Q05",
         "prompt": "A renderer divides a picture into independent tiles. Explain why four cores could finish it sooner than one and give one reason the speed-up may be less than fourfold.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T01-Q06",
         "prompt": "A ticket machine repeatedly checks the same small table of fares. Explain how a cache can reduce the time taken on later checks.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -49,8 +55,15 @@
         "MAR"
       ],
       "answer": "ALU",
-      "explanation": "The arithmetic logic unit performs arithmetic and logical operations."
-    }
+      "explanation": "The arithmetic logic unit performs arithmetic and logical operations.",
+      "lesson": 0
+    },
+    "unit": "1.1 Systems architecture",
+    "lessons": [
+      "CPU components and registers",
+      "CPU performance and embedded systems"
+    ],
+    "paper": 1
   },
   {
     "id": "PX-J277-T02",
@@ -61,37 +74,43 @@
         "id": "PX-J277-T02-Q01",
         "prompt": "Which type of primary memory normally loses its contents when power is removed?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T02-Q02",
         "prompt": "Name the storage technology used by an optical disc.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T02-Q03",
         "prompt": "A controller must keep its startup instructions when powered off and change sensor readings while running. Choose memory for each.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T02-Q04",
         "prompt": "A wildlife recorder gets knocked about and has a small battery. Give two reasons to use solid-state storage instead of a magnetic hard disk.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T02-Q05",
         "prompt": "A laptop slows down when several large applications are open. Explain how virtual memory can keep them running and why performance falls.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T02-Q06",
         "prompt": "A museum needs off-site copies of 20 TB of footage. Restores are rare and a technician already has a tape drive. Recommend magnetic tape or SSD and justify your choice using two distinct requirements.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -102,8 +121,15 @@
         "Hard disk drive"
       ],
       "answer": "Hard disk drive",
-      "explanation": "A hard disk stores magnetised regions on spinning platters."
-    }
+      "explanation": "A hard disk stores magnetised regions on spinning platters.",
+      "lesson": 1
+    },
+    "unit": "1.2 Memory and storage",
+    "lessons": [
+      "Primary memory and virtual memory",
+      "Secondary storage"
+    ],
+    "paper": 1
   },
   {
     "id": "PX-J277-T03",
@@ -114,37 +140,43 @@
         "id": "PX-J277-T03-Q01",
         "prompt": "How many different values can one unsigned byte represent?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T03-Q02",
         "prompt": "Write the decimal number 13 as an 8-bit binary value.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T03-Q03",
         "prompt": "A 40 by 30 pixel icon uses 4 bits per pixel. Calculate the uncompressed pixel data in bytes, ignoring metadata. Show your working.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T03-Q04",
         "prompt": "A system must represent 400 distinct symbols. Find the minimum fixed number of bits per symbol and justify it.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T03-Q05",
         "prompt": "A mono recording lasts 5 seconds, uses 8,000 samples per second and stores 16 bits per sample. Calculate its size in decimal kB, ignoring metadata. Show the stages.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T03-Q06",
         "prompt": "A studio keeps an editable master recording and sends a small listening preview. Recommend a compression approach for each and explain the trade-off for the preview.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -155,8 +187,15 @@
         "4"
       ],
       "answer": "3",
-      "explanation": "Three bits give eight possible binary codes."
-    }
+      "explanation": "Three bits give eight possible binary codes.",
+      "lesson": 1
+    },
+    "unit": "1.2 Memory and storage",
+    "lessons": [
+      "Binary and character representation",
+      "Images, sound and compression"
+    ],
+    "paper": 1
   },
   {
     "id": "PX-J277-T04",
@@ -167,37 +206,43 @@
         "id": "PX-J277-T04-Q01",
         "prompt": "Name the topology in which each workstation connects directly to a central switch.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T04-Q02",
         "prompt": "Which device connects networks and routes packets between them?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T04-Q03",
         "prompt": "Explain one advantage and one drawback of storing a school's shared files on a central server.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T04-Q04",
         "prompt": "An office star network has a single switch. Contrast the impact of one workstation cable breaking with the switch losing power.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T04-Q05",
         "prompt": "A full mesh connects five sites with a direct two-way link per pair. Calculate the number of links, show how you avoid double-counting, and explain one resilience benefit.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T04-Q06",
         "prompt": "A class streams video through a single internet connection. Explain why one student gets a faster stream after the others stop, even though the purchased bandwidth stays constant.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -208,8 +253,15 @@
         "Modem only"
       ],
       "answer": "Switch",
-      "explanation": "A switch uses MAC addresses to forward frames within the LAN."
-    }
+      "explanation": "A switch uses MAC addresses to forward frames within the LAN.",
+      "lesson": 0
+    },
+    "unit": "1.3 Computer networks",
+    "lessons": [
+      "Devices and topologies",
+      "Network services and performance"
+    ],
+    "paper": 1
   },
   {
     "id": "PX-J277-T05",
@@ -220,37 +272,43 @@
         "id": "PX-J277-T05-Q01",
         "prompt": "Name the protocol used for encrypted web browsing.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T05-Q02",
         "prompt": "Which service translates a domain name into an IP address?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T05-Q03",
         "prompt": "A teacher connects a laptop by Wi-Fi and a fixed editing PC by Ethernet. Give one reason for each choice.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T05-Q04",
         "prompt": "A mail app sends a message and later synchronises its inbox with the server. Name one appropriate protocol for each action.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T05-Q05",
         "prompt": "A message is split into packets. Explain how packets can arrive out of order and how the original message can still be reconstructed.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T05-Q06",
         "prompt": "A developer updates a browser while a school replaces its Wi-Fi equipment. Explain how protocol layers help these changes happen independently.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -261,8 +319,15 @@
         "SMTP"
       ],
       "answer": "SMTP",
-      "explanation": "SMTP transfers outgoing mail."
-    }
+      "explanation": "SMTP transfers outgoing mail.",
+      "lesson": 1
+    },
+    "unit": "1.3 Computer networks",
+    "lessons": [
+      "Connections and transmission",
+      "Protocols and layers"
+    ],
+    "paper": 1
   },
   {
     "id": "PX-J277-T06",
@@ -273,37 +338,157 @@
         "id": "PX-J277-T06-Q01",
         "prompt": "Name the type of malicious software that encrypts files and demands payment.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T06-Q02",
         "prompt": "Name the security principle that gives staff only the access they need for their jobs.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T06-Q03",
         "prompt": "A message claims to be from the school office and asks a pupil to sign in urgently using a link. Identify the threat and give one safe way to check the request.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T06-Q04",
         "prompt": "Explain how a firewall and anti-malware software protect against different risks.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T06-Q05",
         "prompt": "A stolen staff password was used to view confidential reports. Recommend three distinct controls that reduce the chance of another disclosure or limit its extent.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T06-Q06",
         "prompt": "A school encrypts laptop drives and makes offline backups. Explain the benefit of each and why an encrypted drive alone is insufficient if a signed-in user deletes a file.",
         "difficulty": "Hard",
+        "marks": 3,
+        "lesson": 1
+      },
+      {
+        "id": "NT-F-mc01",
+        "lesson": 0,
+        "prompt": "Which description best defines malware?",
+        "marks": 1,
+        "options": [
+          "Software designed to damage, disrupt or steal information",
+          "A method of encrypting a file",
+          "A rule blocking all network access",
+          "A legitimate database backup"
+        ]
+      },
+      {
+        "id": "NT-F-mc02",
+        "lesson": 0,
+        "prompt": "What is the main purpose of a phishing email?",
+        "marks": 1,
+        "options": [
+          "To increase internet speed",
+          "To trick someone into revealing information or taking an unsafe action",
+          "To change screen brightness",
+          "To physically lock a server"
+        ]
+      },
+      {
+        "id": "NT-F-mc03",
+        "lesson": 0,
+        "prompt": "An attacker systematically tries a large number of passwords. What type of attack is this?",
+        "marks": 1,
+        "options": [
+          "Data interception",
+          "Denial of service",
+          "Brute-force attack",
+          "Penetration testing"
+        ]
+      },
+      {
+        "id": "NT-F-mc04",
+        "lesson": 0,
+        "prompt": "A school website becomes unavailable because it receives an overwhelming number of malicious requests. Which attack best explains this?",
+        "marks": 1,
+        "options": [
+          "SQL injection",
+          "Spyware",
+          "Phishing",
+          "Denial of service"
+        ]
+      },
+      {
+        "id": "NT-F-mc05",
+        "lesson": 0,
+        "prompt": "What is the central risk of data interception on an insecure network?",
+        "marks": 1,
+        "options": [
+          "Private data may be captured in transit",
+          "Files will always be compressed",
+          "Internet protocols will be disabled permanently",
+          "The CPU will overheat"
+        ]
+      },
+      {
+        "id": "NT-F-mc06",
+        "lesson": 0,
+        "prompt": "What is the concept behind SQL injection?",
+        "marks": 1,
+        "options": [
+          "Installing antivirus tools",
+          "Changing physical security settings",
+          "Manipulating an intended database query through unsafe input",
+          "Using a password manager"
+        ]
+      },
+      {
+        "id": "NT-F-mc07",
+        "lesson": 0,
+        "prompt": "Which example best illustrates social engineering?",
+        "marks": 1,
+        "options": [
+          "A user is deceived by a caller pretending to be IT support",
+          "An application receives a security patch",
+          "A disk is physically encrypted",
+          "A firewall rejects traffic by rule"
+        ]
+      },
+      {
+        "id": "NT-F-mc08",
+        "lesson": 0,
+        "prompt": "Which statement about malware is accurate?",
+        "marks": 1,
+        "options": [
+          "Malware is always visible to users",
+          "Malware can include ransomware, spyware and worms",
+          "Malware only affects mobile phones",
+          "Malware is a security policy"
+        ]
+      },
+      {
+        "id": "NT-F-sa01",
+        "lesson": 0,
+        "prompt": "Describe what malware is and explain two different ways it could harm a school network.",
         "marks": 3
+      },
+      {
+        "id": "NT-F-sa02",
+        "lesson": 0,
+        "prompt": "Compare phishing and brute-force attacks. Explain how each works and identify one key difference.",
+        "marks": 3
+      },
+      {
+        "id": "NT-F-la01",
+        "lesson": 0,
+        "prompt": "A school receives a convincing fake IT email. A staff member enters their password on a false login page. Later, private files are accessed and the school website goes offline during a flood of requests. Analyse the threats and explain how they affect the school. (6 marks)",
+        "marks": 6
       }
     ],
     "practice": {
@@ -314,8 +499,251 @@
         "A longer username"
       ],
       "answer": "A second authentication factor",
-      "explanation": "A separate factor requires another proof of identity."
-    }
+      "explanation": "A separate factor requires another proof of identity.",
+      "lesson": 1
+    },
+    "unit": "1.4 Network security",
+    "lessons": [
+      "Network threats",
+      "Preventing vulnerabilities"
+    ],
+    "paper": 1,
+    "extraPractice": [
+      {
+        "id": "NT-P1",
+        "lesson": 0,
+        "prompt": "A program secretly records a user’s key presses. What is it an example of?",
+        "options": [
+          "Antivirus update",
+          "Spyware",
+          "Firewall",
+          "Encryption"
+        ],
+        "answer": "Spyware",
+        "explanation": "Spyware can collect private information without the user knowing."
+      },
+      {
+        "id": "NT-P2",
+        "lesson": 0,
+        "prompt": "What makes a Trojan different from a worm?",
+        "options": [
+          "It pretends to be useful software",
+          "It always spreads without a user action",
+          "It is a secure login method",
+          "It can only attack routers"
+        ],
+        "answer": "It pretends to be useful software",
+        "explanation": "A Trojan disguises itself as legitimate software."
+      },
+      {
+        "id": "NT-P3",
+        "lesson": 0,
+        "prompt": "A classmate receives a message asking for a password immediately. Which risk is most likely?",
+        "options": [
+          "Compression",
+          "Phishing",
+          "Defragmentation",
+          "Load balancing"
+        ],
+        "answer": "Phishing",
+        "explanation": "Phishing uses deceptive messages to obtain sensitive data."
+      },
+      {
+        "id": "NT-P4",
+        "lesson": 0,
+        "prompt": "What does a computer worm typically do?",
+        "options": [
+          "Replicates and spreads between systems",
+          "Physically steals equipment",
+          "Creates stronger passwords",
+          "Filters packets by port"
+        ],
+        "answer": "Replicates and spreads between systems",
+        "explanation": "Worms are malware that can replicate across devices."
+      },
+      {
+        "id": "NT-P5",
+        "lesson": 0,
+        "prompt": "A website is overwhelmed by unwanted requests and legitimate users cannot connect. Identify the effect.",
+        "options": [
+          "Loss of availability",
+          "Greater confidentiality",
+          "Improved speed",
+          "Encrypted backups"
+        ],
+        "answer": "Loss of availability",
+        "explanation": "Availability is reduced when legitimate users are denied access."
+      },
+      {
+        "id": "NT-P6",
+        "lesson": 0,
+        "prompt": "Which description best fits a brute-force attempt?",
+        "options": [
+          "A message pretending to be a colleague",
+          "Trying many password guesses",
+          "Unplugging a server",
+          "Encrypting traffic in transit"
+        ],
+        "answer": "Trying many password guesses",
+        "explanation": "Brute force systematically tests guesses to discover a credential."
+      },
+      {
+        "id": "NT-P7",
+        "lesson": 0,
+        "prompt": "Why can people be the weak point in network security?",
+        "options": [
+          "People can be persuaded to disclose credentials",
+          "People cannot use encryption",
+          "Passwords cannot be changed",
+          "Files are always public"
+        ],
+        "answer": "People can be persuaded to disclose credentials",
+        "explanation": "Social engineering targets human behaviour rather than only software flaws."
+      },
+      {
+        "id": "NT-P8",
+        "lesson": 0,
+        "prompt": "An attacker reads information traveling across an insecure connection. What threat is this?",
+        "options": [
+          "Data interception",
+          "Penetration testing",
+          "Anti-malware scanning",
+          "User access control"
+        ],
+        "answer": "Data interception",
+        "explanation": "Interception involves capturing data in transit."
+      },
+      {
+        "id": "NT-P9",
+        "lesson": 0,
+        "prompt": "An attacker tries to misuse data entered in a search box to change a database request. Which attack family?",
+        "options": [
+          "Brute force",
+          "SQL injection",
+          "DoS",
+          "Shoulder surfing"
+        ],
+        "answer": "SQL injection",
+        "explanation": "SQL injection attempts to alter intended database queries through untrusted inputs."
+      },
+      {
+        "id": "NT-P10",
+        "lesson": 0,
+        "prompt": "A document is encrypted and a criminal demands payment to restore access. What type of malware is commonly involved?",
+        "options": [
+          "Ransomware",
+          "Adware blocker",
+          "Browser bookmark",
+          "Packet filter"
+        ],
+        "answer": "Ransomware",
+        "explanation": "Ransomware can lock or encrypt data and demand payment."
+      },
+      {
+        "id": "NT-P11",
+        "lesson": 0,
+        "prompt": "A convincing caller claims to be from IT and asks for a login code. What is the main technique?",
+        "options": [
+          "Social engineering",
+          "Data compression",
+          "Packet switching",
+          "Authentication tokenisation"
+        ],
+        "answer": "Social engineering",
+        "explanation": "The caller relies on deception and trust."
+      },
+      {
+        "id": "NT-P12",
+        "lesson": 0,
+        "prompt": "A virus often needs what to spread?",
+        "options": [
+          "Execution of infected files or programs",
+          "A strong password",
+          "A physical padlock",
+          "Successful system updates"
+        ],
+        "answer": "Execution of infected files or programs",
+        "explanation": "Viruses typically attach to files or programs and spread when executed."
+      },
+      {
+        "id": "NT-P13",
+        "lesson": 0,
+        "prompt": "What is the primary purpose of credential theft?",
+        "options": [
+          "To gain unauthorised access",
+          "To improve encryption",
+          "To increase display resolution",
+          "To save network bandwidth"
+        ],
+        "answer": "To gain unauthorised access",
+        "explanation": "Stolen credentials can give attackers access to protected systems."
+      },
+      {
+        "id": "NT-P14",
+        "lesson": 0,
+        "prompt": "A fake website imitates a bank login page. Which security property is most directly at risk?",
+        "options": [
+          "Confidentiality of credentials",
+          "Monitor brightness",
+          "Disk capacity",
+          "Keyboard layout"
+        ],
+        "answer": "Confidentiality of credentials",
+        "explanation": "Credentials may be disclosed to an attacker."
+      },
+      {
+        "id": "NT-P15",
+        "lesson": 0,
+        "prompt": "Which threat primarily aims to stop a service responding?",
+        "options": [
+          "Denial of service",
+          "Data compression",
+          "Software update",
+          "User access levels"
+        ],
+        "answer": "Denial of service",
+        "explanation": "DoS targets availability."
+      },
+      {
+        "id": "NT-P16",
+        "lesson": 0,
+        "prompt": "A criminal captures packets on public Wi-Fi. What outcome might they seek?",
+        "options": [
+          "Sensitive information",
+          "Faster backups",
+          "More CPU cores",
+          "Smaller image files"
+        ],
+        "answer": "Sensitive information",
+        "explanation": "Interception can expose unprotected information."
+      },
+      {
+        "id": "NT-P17",
+        "lesson": 0,
+        "prompt": "A colleague is tricked into installing a fake security tool. Which two concepts are involved?",
+        "options": [
+          "Social engineering and malware",
+          "Encryption and compression",
+          "Firewalls and hashing",
+          "Caching and routing"
+        ],
+        "answer": "Social engineering and malware",
+        "explanation": "Deception can persuade someone to install malicious software."
+      },
+      {
+        "id": "NT-P18",
+        "lesson": 0,
+        "prompt": "What is the most accurate description of SQL injection?",
+        "options": [
+          "Altering queries through unsafe input",
+          "Guessing every password combination",
+          "Flooding a website with requests",
+          "Using antivirus to scan files"
+        ],
+        "answer": "Altering queries through unsafe input",
+        "explanation": "SQL injection exploits unsafe handling of input when constructing queries."
+      }
+    ]
   },
   {
     "id": "PX-J277-T07",
@@ -326,37 +754,43 @@
         "id": "PX-J277-T07-Q01",
         "prompt": "Which type of system software manages hardware and provides a platform for applications?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T07-Q02",
         "prompt": "Name the utility that reduces the storage space occupied by files.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T07-Q03",
         "prompt": "Two programs print at the same time. Explain how the OS can prevent their pages from being interleaved.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T07-Q04",
         "prompt": "A shared PC has separate staff and pupil accounts. Explain two ways the operating system uses those accounts.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T07-Q05",
         "prompt": "A user switches between an editor and a music player on a single-core computer. Explain how both appear responsive.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T07-Q06",
         "prompt": "A magnetic disk stores a file in many separated blocks. Explain what defragmentation does, why it can speed reads, and why this specific benefit is much smaller on an SSD.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -367,8 +801,15 @@
         "Defragmentation"
       ],
       "answer": "Scheduling",
-      "explanation": "The scheduler allocates CPU time."
-    }
+      "explanation": "The scheduler allocates CPU time.",
+      "lesson": 0
+    },
+    "unit": "1.5 Systems software",
+    "lessons": [
+      "Operating system functions",
+      "Utility software"
+    ],
+    "paper": 1
   },
   {
     "id": "PX-J277-T08",
@@ -379,37 +820,43 @@
         "id": "PX-J277-T08-Q01",
         "prompt": "Name one environmental cost of replacing working computers early.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T08-Q02",
         "prompt": "Which UK law specifically addresses unauthorised access to computer systems?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T08-Q03",
         "prompt": "A school survey only needs a year group and lunch preference. Explain one reason to avoid collecting names.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T08-Q04",
         "prompt": "A developer wants to modify and distribute a program. Explain why the software licence matters and give one condition an open-source licence might impose.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T08-Q05",
         "prompt": "A council replaces walk-in appointments with an online-only booking form. Give a benefit, a risk for a specific group and one change that reduces that risk.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T08-Q06",
         "prompt": "A school wants to use facial recognition to register attendance. Give one operational benefit, one privacy or fairness concern and a justified recommendation.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       }
     ],
     "practice": {
@@ -420,8 +867,15 @@
         "Replace a failed battery"
       ],
       "answer": "Replace a failed battery",
-      "explanation": "Repair can avoid premature disposal and new manufacturing."
-    }
+      "explanation": "Repair can avoid premature disposal and new manufacturing.",
+      "lesson": 0
+    },
+    "unit": "1.6 Impacts of digital technology",
+    "lessons": [
+      "Ethical, social and environmental impacts",
+      "Legislation and licensing"
+    ],
+    "paper": 1
   },
   {
     "id": "PX-J277-T09",
@@ -432,37 +886,43 @@
         "id": "PX-J277-T09-Q01",
         "prompt": "What is decomposition?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T09-Q02",
         "prompt": "Which search algorithm repeatedly discards half of a sorted search range?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T09-Q03",
         "prompt": "A bus-route planner stores stops and their connections but omits the colour of each shelter. Name the technique and explain why the colour is omitted.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T09-Q04",
         "prompt": "Perform one left-to-right bubble-sort pass on [5, 1, 4, 2] into ascending order. Write the list after the first swap and after the complete pass.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T09-Q05",
         "prompt": "Search for 17 in [2, 4, 8, 12, 17, 22, 30] using binary search. Use the lower middle when needed. List the values inspected in order and explain each change of range.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T09-Q06",
         "prompt": "Two sorted lists [2, 7, 11] and [3, 8] are merged. Give the first two outputs, explain the repeated selection rule, and state how to finish when one list is empty.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -473,8 +933,15 @@
         "Binary search"
       ],
       "answer": "Linear search",
-      "explanation": "Linear search checks items individually."
-    }
+      "explanation": "Linear search checks items individually.",
+      "lesson": 1
+    },
+    "unit": "2.1 Algorithms",
+    "lessons": [
+      "Computational thinking",
+      "Searching and sorting"
+    ],
+    "paper": 2
   },
   {
     "id": "PX-J277-T10",
@@ -485,37 +952,43 @@
         "id": "PX-J277-T10-Q01",
         "prompt": "In a flowchart, which shape usually represents a decision?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T10-Q02",
         "prompt": "A counter starts at 3. The instruction counter = counter + 2 runs three times. Give its final value.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T10-Q03",
         "prompt": "Trace this algorithm for inputs 4, 1, 6 in order: start total at 0; for each input greater than 2, add it to total. Give the total after the second input and after the third.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T10-Q04",
         "prompt": "An algorithm should find the smallest value in a non-empty list of positive integers. It starts smallest at 0 and only replaces it when a value is smaller. Explain the fault and correct it.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T10-Q05",
         "prompt": "Write an algorithm that reads exactly five integer scores and outputs the number that are at least 60. Python or clear pseudocode is acceptable.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T10-Q06",
         "prompt": "A program reports the mean of positive readings. The sentinel -1 ends input. Zero is ignored. Write pseudocode that also handles a sequence containing no positive readings.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -526,8 +999,15 @@
         "12"
       ],
       "answer": "2",
-      "explanation": "Only 4 and 8 satisfy the condition."
-    }
+      "explanation": "Only 4 and 8 satisfy the condition.",
+      "lesson": 0
+    },
+    "unit": "2.1 Algorithms",
+    "lessons": [
+      "Tracing and representing algorithms",
+      "Designing and refining algorithms"
+    ],
+    "paper": 2
   },
   {
     "id": "PX-J277-T11",
@@ -538,37 +1018,43 @@
         "id": "PX-J277-T11-Q01",
         "prompt": "Which data type would you use for a value that is either true or false?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T11-Q02",
         "prompt": "Give the value of 23 MOD 5.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T11-Q03",
         "prompt": "A Python program reads a quantity using input(). Explain why int() may be needed before adding 1.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T11-Q04",
         "prompt": "A ticket costs £6 for ages below 16 and £9 otherwise. Write a selection statement that assigns the correct price for an integer age.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T11-Q05",
         "prompt": "Write a loop that outputs the multiples of 4 from 4 up to and including 24. Use iteration and do not list the six answers in the code.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T11-Q06",
         "prompt": "A fare is £2.50 for the first zone plus £1.25 for every additional zone. Read an integer number of zones (at least 1), calculate the fare and display it. Use meaningful identifiers.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       }
     ],
     "practice": {
@@ -579,8 +1065,15 @@
         "3"
       ],
       "answer": "3",
-      "explanation": "Integer division returns the whole-number quotient."
-    }
+      "explanation": "Integer division returns the whole-number quotient.",
+      "lesson": 0
+    },
+    "unit": "2.2 Programming fundamentals",
+    "lessons": [
+      "Types, casting and arithmetic",
+      "Selection and iteration"
+    ],
+    "paper": 2
   },
   {
     "id": "PX-J277-T12",
@@ -591,37 +1084,43 @@
         "id": "PX-J277-T12-Q01",
         "prompt": "In a zero-indexed array, what index identifies the fourth item?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T12-Q02",
         "prompt": "Which SQL clause filters records using a condition?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T12-Q03",
         "prompt": "A table Books has fields Title and Copies. Write an SQL query returning the titles of books with fewer than three copies.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T12-Q04",
         "prompt": "In Python, code = 'HORS24'. Give the results of code[0:4] and code[4:] in that order.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T12-Q05",
         "prompt": "Write a function that accepts a non-empty list of temperatures and returns the number below zero. Keep its counter local to the function.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T12-Q06",
         "prompt": "A text file holds one competitor name per line. Write an algorithm that reads all the names, closes the file and displays one name chosen at random. Assume at least one name.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -632,8 +1131,15 @@
         "SELECT"
       ],
       "answer": "FROM",
-      "explanation": "FROM identifies the relation being queried."
-    }
+      "explanation": "FROM identifies the relation being queried.",
+      "lesson": 1
+    },
+    "unit": "2.2 Programming fundamentals",
+    "lessons": [
+      "Arrays, strings and subprograms",
+      "SQL, files and random selection"
+    ],
+    "paper": 2
   },
   {
     "id": "PX-J277-T13",
@@ -644,37 +1150,43 @@
         "id": "PX-J277-T13-Q01",
         "prompt": "What is validation?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T13-Q02",
         "prompt": "A program runs but produces an incorrect total. What type of error is this?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T13-Q03",
         "prompt": "An integer quantity must be from 1 to 20 inclusive. Give one valid boundary input and one invalid input just outside the range, with expected outcomes.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T13-Q04",
         "prompt": "A password entry is hidden on screen, but an empty password is accepted. Explain why masking fails to prevent this and give a suitable validation check.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T13-Q05",
         "prompt": "A discount should apply from £50 inclusive, but a program uses total > 50. Design three tests at whole-pound values immediately below, at and immediately above the threshold. Give expected outcomes.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T13-Q06",
         "prompt": "A seat-booking function accepts integer seat numbers 1–30 from a text input. Outline a robust validation loop that avoids conversion errors and lets the user retry.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       }
     ],
     "practice": {
@@ -685,8 +1197,15 @@
         "10"
       ],
       "answer": "9",
-      "explanation": "Nine is accepted and sits at the upper boundary."
-    }
+      "explanation": "Nine is accepted and sits at the upper boundary.",
+      "lesson": 0
+    },
+    "unit": "2.3 Robust programs",
+    "lessons": [
+      "Validation and defensive design",
+      "Testing and errors"
+    ],
+    "paper": 2
   },
   {
     "id": "PX-J277-T14",
@@ -697,37 +1216,43 @@
         "id": "PX-J277-T14-Q01",
         "prompt": "For a two-input AND gate, what is the output when A = 1 and B = 0?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T14-Q02",
         "prompt": "Which gate inverts a single input?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T14-Q03",
         "prompt": "For F = (NOT A) OR B, calculate F when (A,B) is (1,0) and when it is (1,1).",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T14-Q04",
         "prompt": "A light turns on if a door is open AND a timer is active. Let D and T represent those inputs. Give the Boolean expression and the number of input combinations producing 1.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T14-Q05",
         "prompt": "An alarm sounds if armed A is true and either door D or window W is open. Write the expression, list the gates required using two-input gates, and evaluate it for A=0, D=1, W=1.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T14-Q06",
         "prompt": "A pupil says A OR (B AND C) always equals (A OR B) AND C. Give one input triple that disproves this and evaluate both outputs.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -738,8 +1263,15 @@
         "0"
       ],
       "answer": "0",
-      "explanation": "AND gives 1 and NOT reverses it."
-    }
+      "explanation": "AND gives 1 and NOT reverses it.",
+      "lesson": 0
+    },
+    "unit": "2.4 Boolean logic",
+    "lessons": [
+      "Logic gates and truth values",
+      "Combining Boolean expressions"
+    ],
+    "paper": 2
   },
   {
     "id": "PX-J277-T15",
@@ -750,37 +1282,43 @@
         "id": "PX-J277-T15-Q01",
         "prompt": "Name the translator used for assembly language.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T15-Q02",
         "prompt": "Which IDE feature lets a programmer pause a running program at a chosen line?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T15-Q03",
         "prompt": "Give two reasons a high-level language can make an application easier to develop than assembly language.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T15-Q04",
         "prompt": "An IDE highlights a missing closing bracket and also offers a variable watch. Explain the different purpose of each feature.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "PX-J277-T15-Q05",
         "prompt": "A club plans to distribute a program to identical PCs without sharing its source. Explain how a compiler supports this and give one consequence of changing the source later.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       },
       {
         "id": "PX-J277-T15-Q06",
         "prompt": "A scoring program loses a point only on its third round. Explain how to use a breakpoint, single stepping and a variable watch together to isolate the fault.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -791,8 +1329,15 @@
         "Syntax highlighting"
       ],
       "answer": "Single stepping",
-      "explanation": "Single stepping exposes changes to program state."
-    }
+      "explanation": "Single stepping exposes changes to program state.",
+      "lesson": 1
+    },
+    "unit": "2.5 Programming languages and IDEs",
+    "lessons": [
+      "Languages and translators",
+      "Development tools"
+    ],
+    "paper": 2
   },
   {
     "id": "H446-01",
@@ -803,19 +1348,22 @@
         "id": "H446-01-Q1",
         "prompt": "Name the pipeline stage that interprets an instruction.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "H446-01-Q2",
         "prompt": "In an ideal three-stage pipeline, how many clock cycles are needed to complete five instructions, starting empty? Show your reasoning.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "H446-01-Q3",
         "prompt": "A processor fetches the next sequential instructions before a conditional branch resolves. Explain the effect if the branch is taken.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -826,8 +1374,15 @@
         "Execute"
       ],
       "answer": "Fetch",
-      "explanation": "The fetch stage brings the instruction into the processor."
-    }
+      "explanation": "The fetch stage brings the instruction into the processor.",
+      "lesson": 0
+    },
+    "unit": "1.1 Components of a computer",
+    "lessons": [
+      "Pipeline stages",
+      "Pipeline performance"
+    ],
+    "paper": 1
   },
   {
     "id": "H446-02",
@@ -838,19 +1393,29 @@
         "id": "H446-02-Q1",
         "prompt": "What is a time quantum in round-robin scheduling?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 1
       },
       {
         "id": "H446-02-Q2",
         "prompt": "A, B and C arrive at time zero in that queue order, requiring 5, 2 and 1 units. With quantum 2 and no overhead, give B and C's completion times.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "H446-02-Q3",
         "prompt": "Explain how decreasing the quantum may improve responsiveness yet reduce throughput.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
+      },
+      {
+        "id": "H446-02-Q04",
+        "difficulty": "Medium",
+        "marks": 2,
+        "lesson": 0,
+        "prompt": "Two processes are ready. A arrived first and needs 9 ms. B arrived later and needs 2 ms. Which runs first under first-come first-served, and which under non-preemptive shortest job first?"
       }
     ],
     "practice": {
@@ -861,8 +1426,15 @@
         "Shortest job first"
       ],
       "answer": "Shortest job first",
-      "explanation": "The selection criterion is estimated job length."
-    }
+      "explanation": "The selection criterion is estimated job length.",
+      "lesson": 0
+    },
+    "unit": "1.2 Software and software development",
+    "lessons": [
+      "Scheduling policies",
+      "Round-robin scheduling"
+    ],
+    "paper": 1
   },
   {
     "id": "H446-03",
@@ -873,19 +1445,22 @@
         "id": "H446-03-Q1",
         "prompt": "What is a foreign key?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "H446-03-Q2",
         "prompt": "Loan(PupilID, BookID, DueDate) uses (PupilID, BookID) as its key. Suppose BookTitle is added and depends only on BookID. Explain the normalisation issue.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "H446-03-Q3",
         "prompt": "A transfer debits account X and credits account Y. Explain how atomicity and isolation protect this operation when another transaction reads the accounts.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -896,8 +1471,15 @@
         "Isolation"
       ],
       "answer": "Durability",
-      "explanation": "Durability preserves a committed transaction's effects."
-    }
+      "explanation": "Durability preserves a committed transaction's effects.",
+      "lesson": 1
+    },
+    "unit": "1.3 Exchanging data",
+    "lessons": [
+      "Relational keys and normalisation",
+      "Transactions"
+    ],
+    "paper": 1
   },
   {
     "id": "H446-04",
@@ -908,19 +1490,22 @@
         "id": "H446-04-Q1",
         "prompt": "Which abstract data type removes the oldest waiting element first?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "H446-04-Q2",
         "prompt": "An empty hash table has slots 0 to 6. Insert 10 then 17 using key MOD 7 and linear probing. Give the final slot of each key.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "H446-04-Q3",
         "prompt": "A binary search tree receives distinct keys 2, 4, 6, 8 in order. Describe its shape, the worst-case search time for n similarly ordered keys and one way to improve it.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 0
       }
     ],
     "practice": {
@@ -931,8 +1516,15 @@
         "A key is read twice"
       ],
       "answer": "Two keys map to one slot",
-      "explanation": "Different keys can yield the same index."
-    }
+      "explanation": "Different keys can yield the same index.",
+      "lesson": 1
+    },
+    "unit": "1.4 Data types, structures and algorithms",
+    "lessons": [
+      "Queues and search trees",
+      "Hash tables"
+    ],
+    "paper": 1
   },
   {
     "id": "H446-05",
@@ -943,19 +1535,22 @@
         "id": "H446-05-Q1",
         "prompt": "State the time complexity of binary search on a sorted array.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "H446-05-Q2",
         "prompt": "An algorithm executes its inner statement exactly n times for each of n outer iterations. Give its operation count and time complexity.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "H446-05-Q3",
         "prompt": "Edges of a directed graph are S→A (2), S→B (5), A→B (1), B→T (2), A→T (8). Apply Dijkstra from S. Give the improved distance to B, shortest distance to T and the path.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -966,8 +1561,15 @@
         "Dijkstra"
       ],
       "answer": "Dijkstra",
-      "explanation": "Dijkstra repeatedly settles the closest unsettled vertex."
-    }
+      "explanation": "Dijkstra repeatedly settles the closest unsettled vertex.",
+      "lesson": 1
+    },
+    "unit": "2.3 Algorithms",
+    "lessons": [
+      "Complexity analysis",
+      "Shortest paths"
+    ],
+    "paper": 2
   },
   {
     "id": "H446-06",
@@ -978,19 +1580,22 @@
         "id": "H446-06-Q1",
         "prompt": "What is the purpose of a base case?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "H446-06-Q2",
         "prompt": "Function f returns 1 if n = 0, otherwise it returns 2 × f(n − 1). For f(3), give the maximum number of simultaneously active calls including the base case, and the value returned.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "H446-06-Q3",
         "prompt": "A recursive routine processes one item per call from a sequence of length n. Explain a risk for a very large n and how an iterative rewrite could avoid it.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -1001,8 +1606,15 @@
         "Queue"
       ],
       "answer": "Stack",
-      "explanation": "A function returns to the most recent unfinished caller."
-    }
+      "explanation": "A function returns to the most recent unfinished caller.",
+      "lesson": 1
+    },
+    "unit": "2.2 Problem solving and programming",
+    "lessons": [
+      "Recursive calls",
+      "Stack use and iterative alternatives"
+    ],
+    "paper": 2
   },
   {
     "id": "H446-07",
@@ -1013,19 +1625,22 @@
         "id": "H446-07-Q1",
         "prompt": "Write the result of X AND 1 in simplest form.",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "H446-07-Q2",
         "prompt": "Use De Morgan’s law to rewrite NOT(A OR B). Evaluate the result for A = 0, B = 1.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 1
       },
       {
         "id": "H446-07-Q3",
         "prompt": "Simplify (P AND Q) OR (P AND NOT Q). Show two algebraic steps and state the hardware implication.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -1036,8 +1651,15 @@
         "1"
       ],
       "answer": "X",
-      "explanation": "OR with false leaves X unchanged."
-    }
+      "explanation": "OR with false leaves X unchanged.",
+      "lesson": 0
+    },
+    "unit": "1.4 Data types, structures and algorithms",
+    "lessons": [
+      "Boolean identities",
+      "Logic simplification"
+    ],
+    "paper": 1
   },
   {
     "id": "H446-08",
@@ -1048,19 +1670,22 @@
         "id": "H446-08-Q1",
         "prompt": "What is the range of an 8-bit two's complement integer?",
         "difficulty": "Easy",
-        "marks": 1
+        "marks": 1,
+        "lesson": 0
       },
       {
         "id": "H446-08-Q2",
         "prompt": "Encode −18 as an 8-bit two's complement integer. Show a working step.",
         "difficulty": "Medium",
-        "marks": 2
+        "marks": 2,
+        "lesson": 0
       },
       {
         "id": "H446-08-Q3",
         "prompt": "An 8-bit two's complement adder adds 01110000 and 00110000. Give the 8-bit result, its signed interpretation and the reason overflow occurred.",
         "difficulty": "Hard",
-        "marks": 3
+        "marks": 3,
+        "lesson": 1
       }
     ],
     "practice": {
@@ -1071,7 +1696,14 @@
         "1111"
       ],
       "answer": "1111",
-      "explanation": "Adding one to 1111 wraps to zero in four bits."
-    }
+      "explanation": "Adding one to 1111 wraps to zero in four bits.",
+      "lesson": 0
+    },
+    "unit": "1.4 Data types, structures and algorithms",
+    "lessons": [
+      "Two’s complement representation",
+      "Arithmetic and overflow"
+    ],
+    "paper": 1
   }
 ]
